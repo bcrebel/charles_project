@@ -368,89 +368,48 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* line 31, ../sass/styles.scss */
 .learn {
-  width: 60%;
-  height: 60%;
-  background-position: 0 10.4%;
-  background-size: 181% 512%;
-  margin: 30px 0 0px 20%;
-  float: left;
-}
-@media screen and (max-width: 480px) {
-  /* line 31, ../sass/styles.scss */
-  .learn {
-    width: 47.96645%;
-    height: 30%;
-    background-size: 179% 522%;
-    margin: 50px 0 0px 30%;
-  }
+  width: 129px;
+  height: 78px;
+  background-position: 0 10%;
+  background-size: initial;
+  margin: 30px auto;
 }
 
-/* line 47, ../sass/styles.scss */
+/* line 40, ../sass/styles.scss */
 .research {
-  width: 31.62791%;
-  height: 52.30769%;
+  width: 68px;
+  height: 68px;
   background-position: 0 100%;
-  background-size: 344% 575%;
-  margin: 35px 0px 0px 35%;
-  float: left;
-}
-@media screen and (max-width: 480px) {
-  /* line 47, ../sass/styles.scss */
-  .research {
-    width: 25.28464%;
-    height: 26.15385%;
-    margin: 50px 0 0 35%;
-  }
+  margin: 30px auto;
 }
 
-/* line 62, ../sass/styles.scss */
+/* line 48, ../sass/styles.scss */
 .calendar {
-  width: 25.11628%;
-  height: 47.69231%;
-  background-position: 0 33%;
-  background-size: 435% 617%;
-  float: left;
-  margin: 35px 0px 0px 38%;
+  width: 54px;
+  height: 62px;
+  background-position: 0 33.3%;
+  margin: 30px auto;
 }
-@media screen and (max-width: 480px) {
-  /* line 62, ../sass/styles.scss */
-  .calendar {
-    width: 24.09477%;
-    height: 28.61538%;
-    margin: 50px 0 0 40%;
-  }
+
+/* line 59, ../sass/styles.scss */
+.heart {
+  width: 64px;
+  height: 63px;
+  background-position: 0 52%;
+  margin: 30px auto;
 }
 
 /* line 78, ../sass/styles.scss */
-.heart {
-  width: 29.30233%;
-  height: 48.46154%;
-  background-position: 0 52%;
-  background-size: 366% 623%;
-  float: left;
-  margin: 35px 0px 0px 35%;
-}
-@media screen and (max-width: 480px) {
-  /* line 78, ../sass/styles.scss */
-  .heart {
-    width: 0.28111 100%;
-    height: 29.07692%;
-    background-size: 355% 627%;
-    margin: 50px 0px 0px 35%;
-  }
-}
-
-/* line 107, ../sass/styles.scss */
 body {
   color: #3d404e;
 }
 
-/* line 113, ../sass/styles.scss */
+/* line 84, ../sass/styles.scss */
 #nav {
   margin: 0 0 25px auto;
   text-align: center;
 }
-/* line 116, ../sass/styles.scss */
+/* line 87, ../sass/styles.scss */
 #nav li {
   font-size: 13px;
   margin-left: 40px;
@@ -460,13 +419,14 @@ body {
   text-transform: uppercase;
 }
 @media screen and (max-width: 1024px) {
-  /* line 116, ../sass/styles.scss */
+  /* line 87, ../sass/styles.scss */
   #nav li {
     font-size: 0.75rem;
+    margin-left: 25px;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 116, ../sass/styles.scss */
+  /* line 87, ../sass/styles.scss */
   #nav li {
     width: 100%;
     margin-left: 0px;
@@ -474,12 +434,12 @@ body {
   }
 }
 
-/* line 136, ../sass/styles.scss */
+/* line 108, ../sass/styles.scss */
 .hero-slide {
   width: 100%;
 }
 
-/* line 141, ../sass/styles.scss */
+/* line 113, ../sass/styles.scss */
 h1, h2 {
   font-family: "Old Standard TT", serif;
   letter-spacing: 2px;
@@ -490,24 +450,24 @@ h1, h2 {
   margin: 100px 0px 30px auto;
 }
 @media screen and (max-width: 1024px) {
-  /* line 141, ../sass/styles.scss */
+  /* line 113, ../sass/styles.scss */
   h1, h2 {
     font-size: 20px;
   }
 }
 
-/* line 155, ../sass/styles.scss */
+/* line 127, ../sass/styles.scss */
 h2 {
   font-size: 24px;
 }
 @media screen and (max-width: 1024px) {
-  /* line 155, ../sass/styles.scss */
+  /* line 127, ../sass/styles.scss */
   h2 {
     font-size: 16px;
   }
 }
 
-/* line 163, ../sass/styles.scss */
+/* line 135, ../sass/styles.scss */
 hr {
   width: 145px;
   height: 3px;
@@ -515,7 +475,7 @@ hr {
   border: none;
 }
 
-/* line 170, ../sass/styles.scss */
+/* line 142, ../sass/styles.scss */
 #description {
   font-family: "Open Sans", sans-serif;
   text-align: center;
@@ -526,7 +486,7 @@ hr {
   line-height: 150%;
 }
 @media screen and (max-width: 1024px) {
-  /* line 170, ../sass/styles.scss */
+  /* line 142, ../sass/styles.scss */
   #description {
     font-size: 14px;
     margin: 30px 0 0 20%;
@@ -534,7 +494,7 @@ hr {
   }
 }
 
-/* line 187, ../sass/styles.scss */
+/* line 159, ../sass/styles.scss */
 #how li {
   display: inline-block;
   margin-left: 2.06932%;
@@ -542,7 +502,7 @@ hr {
   float: left;
 }
 @media screen and (max-width: 1024px) {
-  /* line 187, ../sass/styles.scss */
+  /* line 159, ../sass/styles.scss */
   #how li {
     width: 44.82669%;
     margin-top: 2.06932%;
@@ -550,13 +510,12 @@ hr {
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 187, ../sass/styles.scss */
+  /* line 159, ../sass/styles.scss */
   #how li {
-    width: 44.82669%;
-    margin-left: 2.06932%;
+    width: 89.65338%;
   }
 }
-/* line 203, ../sass/styles.scss */
+/* line 175, ../sass/styles.scss */
 #how li span {
   font-family: "Old Standard TT", serif;
   color: white;
@@ -564,28 +523,30 @@ hr {
   margin: 10px;
   float: left;
 }
-/* line 211, ../sass/styles.scss */
+/* line 183, ../sass/styles.scss */
 #how li .rect {
   width: 100%;
   height: 130px;
   background-color: #3d404e;
+  float: left;
 }
-/* line 217, ../sass/styles.scss */
+/* line 190, ../sass/styles.scss */
 #how li p {
   width: 100%;
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: 300;
   margin: 10px 0 10px 0;
+  float: right;
 }
 @media screen and (max-width: 480px) {
-  /* line 217, ../sass/styles.scss */
+  /* line 190, ../sass/styles.scss */
   #how li p {
     font-size: 12px;
   }
 }
 
-/* line 231, ../sass/styles.scss */
+/* line 205, ../sass/styles.scss */
 .wrapper {
   width: 75%;
   margin-left: 12.5%;
