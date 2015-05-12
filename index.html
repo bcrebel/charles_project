@@ -4,10 +4,12 @@
 		<meta charset="UTF-8">
 		<meta http-equiv="x-ua-compatible" content="IE=edge">
 		<meta name="viewport" content="initial-scale=1">
-		<link href="http://fonts.googleapis.com/css?family=Old+Standard+TT" rel="stylesheet" type="text/css">
+		<link href='http://fonts.googleapis.com/css?family=Old+Standard+TT:400,700' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>		
-		<link href="js/jquery-ui-1.11.4.custom/jquery-ui.min.css" rel="stylesheet" type="text/css">
+		<link href="js/jquery-ui-1.11.4.custom/jquery-ui.css" rel="stylesheet" type="text/css">
 		<link href="stylesheets/styles.css" rel="stylesheet" type="text/css">
+		<link href="stylesheets/font-awesome.css" rel="stylesheet" type="text/css">
+
 	</head>
 	<body>
 
@@ -15,22 +17,33 @@
 
 			<div class="sprite-logo">
 			</div>
+
 			<ul id="nav">
+
 				<li>About
 				</li>
+
 				<li>Book Our Service
 				</li>
+
 				<li>The Happy Ending
 				</li>
+
 				<li>Contact
 				</li>
+
 			</ul>
 
 			<div class="hero-slide">
+
 				<img src="images/hero1.png">
+
 				<img src="images/hero2.png">
+
 				<img src="images/hero3.png">
+
 			</div>
+
 			<h2>we help you create the most <br>memorable moment with your love.</h2>
 
 			<hr>
@@ -40,9 +53,9 @@
 			</p>
 
 		</section>
+
+		
 		<section id="how">
-
-
 
 			<h1>How The Charles Works</h1>
 
@@ -68,6 +81,7 @@
 					</li>
 
 					<li>
+
 						<div class="rect">
 
 							<span>2</span>
@@ -124,7 +138,189 @@
 		</section>
 
 		<section id="plan">
+
+			<div class="wrapper">
+
+				<h1>Plan Your Big Day</h1>
+
+ 				<div id="plan-wrapper">
+					
+					<span>If you don't have a clue, let us help you find out.</span>
+ 
+					<form>
+
+						<input placeholder="Give us your budget range." type="text" id="range">
+
+						<input placeholder="The Date" type="text" id="datepicker">
+						
+						<select name="location" id="location">
+						
+							<option selected="selected">The Location</option>
+						
+						</select>
+						
+						<ul>
+							<li>
+							
+								<input type="checkbox" id="check1">
+
+								<label for="check1">
+									Give us your budget 
+								</label>
+
+							</li>
+
+							<li>
+
+								<input type="checkbox" id="check2">
+						
+								<label for="check2">Give us your budget</label>
+
+							</li>
+
+							<li>
+								<input type="checkbox" id="check3">
+						
+								<label for="check3">
+									Give us your budget
+								</label>
+
+							</li>
+
+						</ul>
+						
+						<textarea placeholder="Additional Notes and Information"></textarea>
+
+					</form>
+
+					<button>Send Us Your Request</button>
+				
+				</div>
+			
+			</div>
+
 		</section>
+
+		<section id="happy">
+
+			<hr>
+
+			<div class="wrapper">
+
+				<h1>The Happy Ending Stories</h1>
+
+				<ul>
+
+					<li>
+
+						<div class="hp1"></div>
+
+					</li>
+
+					<li>
+
+						<div class="hp2"></div>
+
+					</li>
+
+					<li>
+						
+						<div class="hp3"></div>
+
+					</li>
+
+
+				</ul>
+
+			</div>
+			
+			<hr>
+
+		</section>
+
+		<section id="contact">
+			
+			<div class="wrapper">
+
+				<h1>Contact Us</h1> 
+
+				<hr>
+
+				<p>1.123.456.7890</p>
+
+				<p>info@thecharlesnyc.com</p>
+
+				<ul>
+
+					<li>
+
+						<i class="fa fa-twitter"></i>
+
+					</li>
+
+					<li>
+
+						<i class="fa fa-vimeo-square"></i>
+
+					</li>
+
+					<li>
+
+						<i class="fa fa-facebook"></i>
+
+					</li>
+
+					<li>
+
+						<i class="fa fa-pinterest"></i>
+
+					</li>
+
+				</ul>
+
+			</div>
+
+		</section>
+
+		<footer>
+
+			<div class="wrapper">
+
+				<ul>
+
+					<li>Privacy Policy
+					</li>
+
+					<li>|
+					</li>
+
+					<li>Terms &amp; Conditions
+					</li>
+
+					<li>|
+					</li>
+
+					<li>All Rights Reserved 2014
+					</li>
+
+					<li>|
+					</li>
+
+					<li>The Charles NYC
+					</li>
+
+					<li>|
+					</li>
+
+					<li>
+						Site By The Charles
+					</li>
+
+				</ul>
+
+			</div>
+
+		</footer>
 
 		<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 		<script src="js/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
@@ -139,6 +335,12 @@
   				});
 			});
 		</script>
+		<script>
+		  $(function() {
+		    $( "#datepicker" ).datepicker();
+		  });
+  		</script>
+  		
 	</body>
 
 </html>

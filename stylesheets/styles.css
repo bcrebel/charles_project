@@ -1,8 +1,4 @@
 @charset "UTF-8";
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 /* line 5, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1,
@@ -101,7 +97,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 /* line 66, ../sass/_slick.scss */
 .slick-loading .slick-list {
-  background: #fff url('/images/ajax-loader.gif') center center no-repeat;
+  background: #fff url('../images/ajax-loader.gif') center center no-repeat;
 }
 /* line 70, ../sass/_slick.scss */
 .slick-list.dragging {
@@ -184,8 +180,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* Icons */
 @font-face {
   font-family: "slick";
-  src: url('/fonts/slick.eot');
-  src: url('/fonts/slick.eot?#iefix') format("embedded-opentype"), url('/fonts/slick.woff') format("woff"), url('/fonts/slick.ttf') format("truetype"), url('/fonts/slick.svg#slick') format("svg");
+  src: url('../fonts/slick.eot');
+  src: url('../fonts/slick.eot?#iefix') format("embedded-opentype"), url('../fonts/slick.woff') format("woff"), url('../fonts/slick.ttf') format("truetype"), url('../fonts/slick.svg#slick') format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -347,18 +343,23 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* line 96, sprites/*.png */
-.sprites-sprite, .sprite-logo, .learn, .research, .calendar, .heart {
-  background-image: url('/images/sprites-s33dfd1dc59.png');
+.sprites-sprite, .sprite-logo, .learn, .research, .calendar, .heart, #contact p::before, #contact p:nth-child(3)::before {
+  background-image: url('../images/sprites-s33dfd1dc59.png');
   background-repeat: no-repeat;
 }
 
-/* line 18, ../sass/styles.scss */
-.sprites-sprite, .sprite-logo, .learn, .research, .calendar, .heart {
+/* line 24, ../sass/styles.scss */
+body {
+  color: #3d404e;
+}
+
+/* line 31, ../sass/styles.scss */
+.sprites-sprite, .sprite-logo, .learn, .research, .calendar, .heart, #contact p::before, #contact p:nth-child(3)::before {
   background-image: url("../images/sprites-s33dfd1dc59.png");
   background-repeat: no-repeat;
 }
 
-/* line 23, ../sass/styles.scss */
+/* line 38, ../sass/styles.scss */
 .sprite-logo {
   background-position: 0px -235px;
   width: 235px;
@@ -366,50 +367,52 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   margin: 50px auto;
 }
 
-/* line 31, ../sass/styles.scss */
+/* line 46, ../sass/styles.scss */
 .learn {
   width: 129px;
   height: 78px;
-  background-position: 0 10%;
+  background-position: 0 -32px;
   background-size: initial;
   margin: 30px auto;
 }
 
-/* line 40, ../sass/styles.scss */
+/* line 55, ../sass/styles.scss */
 .research {
   width: 68px;
   height: 68px;
-  background-position: 0 100%;
+  background-position: 0 -325px;
   margin: 30px auto;
 }
 
-/* line 48, ../sass/styles.scss */
+/* line 63, ../sass/styles.scss */
 .calendar {
   width: 54px;
   height: 62px;
-  background-position: 0 33.3%;
+  background-position: 0 -110px;
   margin: 30px auto;
 }
 
-/* line 59, ../sass/styles.scss */
+/* line 74, ../sass/styles.scss */
 .heart {
   width: 64px;
   height: 63px;
-  background-position: 0 52%;
+  background-position: 0 -172px;
   margin: 30px auto;
 }
 
-/* line 78, ../sass/styles.scss */
-body {
-  color: #3d404e;
+/* line 83, ../sass/styles.scss */
+section {
+  width: 100%;
+  float: left;
+  margin: 25px 0 25px 0;
 }
 
-/* line 84, ../sass/styles.scss */
+/* line 89, ../sass/styles.scss */
 #nav {
   margin: 0 0 25px auto;
   text-align: center;
 }
-/* line 87, ../sass/styles.scss */
+/* line 92, ../sass/styles.scss */
 #nav li {
   font-size: 13px;
   margin-left: 40px;
@@ -419,14 +422,14 @@ body {
   text-transform: uppercase;
 }
 @media screen and (max-width: 1024px) {
-  /* line 87, ../sass/styles.scss */
+  /* line 92, ../sass/styles.scss */
   #nav li {
     font-size: 0.75rem;
     margin-left: 25px;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 87, ../sass/styles.scss */
+  /* line 92, ../sass/styles.scss */
   #nav li {
     width: 100%;
     margin-left: 0px;
@@ -434,12 +437,12 @@ body {
   }
 }
 
-/* line 108, ../sass/styles.scss */
+/* line 113, ../sass/styles.scss */
 .hero-slide {
   width: 100%;
 }
 
-/* line 113, ../sass/styles.scss */
+/* line 119, ../sass/styles.scss */
 h1, h2 {
   font-family: "Old Standard TT", serif;
   letter-spacing: 2px;
@@ -447,27 +450,28 @@ h1, h2 {
   text-transform: uppercase;
   line-height: 150%;
   font-size: 30px;
-  margin: 100px 0px 30px auto;
+  font-weight: bold;
+  margin: 75px 0px 30px auto;
 }
 @media screen and (max-width: 1024px) {
-  /* line 113, ../sass/styles.scss */
+  /* line 119, ../sass/styles.scss */
   h1, h2 {
     font-size: 20px;
   }
 }
 
-/* line 127, ../sass/styles.scss */
+/* line 136, ../sass/styles.scss */
 h2 {
   font-size: 24px;
 }
 @media screen and (max-width: 1024px) {
-  /* line 127, ../sass/styles.scss */
+  /* line 136, ../sass/styles.scss */
   h2 {
     font-size: 16px;
   }
 }
 
-/* line 135, ../sass/styles.scss */
+/* line 146, ../sass/styles.scss */
 hr {
   width: 145px;
   height: 3px;
@@ -475,7 +479,7 @@ hr {
   border: none;
 }
 
-/* line 142, ../sass/styles.scss */
+/* line 155, ../sass/styles.scss */
 #description {
   font-family: "Open Sans", sans-serif;
   text-align: center;
@@ -486,7 +490,7 @@ hr {
   line-height: 150%;
 }
 @media screen and (max-width: 1024px) {
-  /* line 142, ../sass/styles.scss */
+  /* line 155, ../sass/styles.scss */
   #description {
     font-size: 14px;
     margin: 30px 0 0 20%;
@@ -494,7 +498,7 @@ hr {
   }
 }
 
-/* line 159, ../sass/styles.scss */
+/* line 175, ../sass/styles.scss */
 #how li {
   display: inline-block;
   margin-left: 2.06932%;
@@ -502,7 +506,7 @@ hr {
   float: left;
 }
 @media screen and (max-width: 1024px) {
-  /* line 159, ../sass/styles.scss */
+  /* line 175, ../sass/styles.scss */
   #how li {
     width: 44.82669%;
     margin-top: 2.06932%;
@@ -510,12 +514,12 @@ hr {
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 159, ../sass/styles.scss */
+  /* line 175, ../sass/styles.scss */
   #how li {
     width: 89.65338%;
   }
 }
-/* line 175, ../sass/styles.scss */
+/* line 189, ../sass/styles.scss */
 #how li span {
   font-family: "Old Standard TT", serif;
   color: white;
@@ -523,14 +527,14 @@ hr {
   margin: 10px;
   float: left;
 }
-/* line 183, ../sass/styles.scss */
+/* line 196, ../sass/styles.scss */
 #how li .rect {
   width: 100%;
   height: 130px;
   background-color: #3d404e;
   float: left;
 }
-/* line 190, ../sass/styles.scss */
+/* line 202, ../sass/styles.scss */
 #how li p {
   width: 100%;
   font-family: "Open Sans", sans-serif;
@@ -540,16 +544,326 @@ hr {
   float: right;
 }
 @media screen and (max-width: 480px) {
-  /* line 190, ../sass/styles.scss */
+  /* line 202, ../sass/styles.scss */
   #how li p {
     font-size: 12px;
   }
 }
 
-/* line 205, ../sass/styles.scss */
+/* line 219, ../sass/styles.scss */
 .wrapper {
   width: 75%;
   margin-left: 12.5%;
+  margin-bottom: 50px;
   float: left;
   box-sizing: border-box;
+}
+
+/* line 229, ../sass/styles.scss */
+#plan {
+  background-color: #3d404e;
+  color: white;
+}
+/* line 232, ../sass/styles.scss */
+#plan #plan-wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+/* line 236, ../sass/styles.scss */
+#plan span {
+  font-family: "Old Standard TT", serif;
+}
+/* line 239, ../sass/styles.scss */
+#plan label {
+  font-family: "Open Sans", sans-serif;
+}
+/* line 242, ../sass/styles.scss */
+#plan input, #plan select, #plan textarea {
+  height: 50px;
+  border: solid 1px #8287a6 !important;
+  background-color: #3d404e !important;
+  color: #8287a6;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  margin-right: 3.8%;
+  margin-top: 25px;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+@media screen and (max-width: 1024px) {
+  /* line 242, ../sass/styles.scss */
+  #plan input, #plan select, #plan textarea {
+    font-size: 12px;
+  }
+}
+/* line 260, ../sass/styles.scss */
+#plan #range {
+  width: 50%;
+  padding-left: 10px;
+  color: #8287a6 !important;
+}
+@media screen and (max-width: 1024px) {
+  /* line 260, ../sass/styles.scss */
+  #plan #range {
+    width: 100%;
+    margin: 25px auto 0 auto;
+  }
+}
+/* line 270, ../sass/styles.scss */
+#plan #datepicker, #plan #location, #plan #datepicker {
+  width: 20%;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px;
+  -moz-appearance: none;
+  padding-left: 15px;
+}
+@media screen and (max-width: 1024px) {
+  /* line 270, ../sass/styles.scss */
+  #plan #datepicker, #plan #location, #plan #datepicker {
+    width: 48%;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 270, ../sass/styles.scss */
+  #plan #datepicker, #plan #location, #plan #datepicker {
+    width: 100%;
+  }
+}
+/* line 284, ../sass/styles.scss */
+#plan #location {
+  margin-right: 0px;
+}
+@media screen and (max-width: 1024px) {
+  /* line 288, ../sass/styles.scss */
+  #plan #datepicker {
+    margin-right: 2%;
+  }
+}
+/* line 295, ../sass/styles.scss */
+#plan .hasDatepicker:after {
+  content: '/25BC';
+}
+/* line 298, ../sass/styles.scss */
+#plan ::-webkit-input-placeholder {
+  color: #8287a6;
+}
+/* line 301, ../sass/styles.scss */
+#plan input[type=checkbox] {
+  width: 20px;
+  height: 20px;
+  background-color: #3d404e;
+  border: solid 1px #8287a6 !important;
+}
+/* line 309, ../sass/styles.scss */
+#plan li {
+  display: inline-block;
+  width: 200px;
+}
+/* line 313, ../sass/styles.scss */
+#plan label {
+  color: #8287a6;
+  display: inline-block;
+  margin: -24px 14px 0px 27px;
+  float: right;
+}
+/* line 320, ../sass/styles.scss */
+#plan textarea {
+  width: 100%;
+  height: 165px;
+  padding: 15px;
+}
+/* line 326, ../sass/styles.scss */
+#plan button {
+  background-color: #8287a6;
+  color: white;
+  border: none;
+  text-transform: uppercase;
+  margin: 50px auto 0px auto;
+  font-size: 18px;
+  font-family: "Old Standard TT", serif;
+  box-sizing: border-box;
+  padding: 10px 25px 10px 25px;
+  letter-spacing: 2px;
+  display: block;
+}
+/* line 338, ../sass/styles.scss */
+#plan button:hover {
+  background: white;
+  color: #8287a6;
+}
+@media screen and (max-width: 1024px) {
+  /* line 326, ../sass/styles.scss */
+  #plan button {
+    font-size: 12px;
+  }
+}
+
+/* line 352, ../sass/styles.scss */
+#happy {
+  margin: 0px;
+}
+/* line 354, ../sass/styles.scss */
+#happy hr {
+  background-color: #3d404e;
+  border: none;
+  margin: 0 0 20px 0;
+  width: 100%;
+  height: 1px;
+  display: block;
+  float: left;
+}
+/* line 362, ../sass/styles.scss */
+#happy hr:last-child {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+/* line 368, ../sass/styles.scss */
+#happy h1, #happy h2 {
+  margin-top: 15px;
+}
+/* line 371, ../sass/styles.scss */
+#happy li {
+  display: inline-block;
+  border: solid 1px #3d404e;
+  padding: 10px;
+  width: 26.51113%;
+  height: 250px;
+  margin-left: 3%;
+}
+@media screen and (max-width: 1024px) {
+  /* line 371, ../sass/styles.scss */
+  #happy li {
+    width: 79.5334%;
+    margin: 25px auto;
+    display: block;
+  }
+}
+/* line 384, ../sass/styles.scss */
+#happy .hp1, #happy .hp2, #happy .hp3 {
+  background-image: url("../images/happy.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 1024px) {
+  /* line 384, ../sass/styles.scss */
+  #happy .hp1, #happy .hp2, #happy .hp3 {
+    background-position-y: 40%;
+  }
+}
+/* line 394, ../sass/styles.scss */
+#happy .hp2, #happy .hp3 {
+  background-image: url("../images/happy2.png");
+}
+/* line 398, ../sass/styles.scss */
+#happy .hp3 {
+  background-image: url("../images/happy3.png");
+}
+
+/* line 409, ../sass/styles.scss */
+#contact {
+  background-color: #3d404e;
+  color: white;
+}
+/* line 412, ../sass/styles.scss */
+#contact hr {
+  width: 145px;
+  height: 3px;
+  background: white;
+  border: none;
+}
+/* line 418, ../sass/styles.scss */
+#contact p {
+  font-size: 24px;
+  font-family: "Old Standard TT", serif;
+  text-align: center;
+  letter-spacing: 2px;
+  margin-top: 25px;
+}
+@media screen and (max-width: 1024px) {
+  /* line 418, ../sass/styles.scss */
+  #contact p {
+    font-size: 1rem;
+  }
+}
+/* line 427, ../sass/styles.scss */
+#contact p::before {
+  width: 32px;
+  height: 32px;
+  content: '';
+  display: inline-block;
+  background-position: 0px 0px;
+  margin-right: 15px;
+}
+@media screen and (max-width: 480px) {
+  /* line 427, ../sass/styles.scss */
+  #contact p::before {
+    position: absolute;
+    margin: -50px 0 0 85px;
+  }
+}
+/* line 441, ../sass/styles.scss */
+#contact p:nth-child(3) {
+  margin-top: 100px;
+}
+@media screen and (max-width: 480px) {
+  /* line 441, ../sass/styles.scss */
+  #contact p:nth-child(3) {
+    margin-bottom: 100px;
+  }
+}
+/* line 446, ../sass/styles.scss */
+#contact p:nth-child(3)::before {
+  width: 32px;
+  height: 32px;
+  content: '';
+  display: inline-block;
+  background-position: 0px -293px;
+  margin-right: 20px;
+}
+@media screen and (max-width: 480px) {
+  /* line 446, ../sass/styles.scss */
+  #contact p:nth-child(3)::before {
+    position: absolute;
+    margin: -50px 0px 0px 50px;
+  }
+}
+/* line 464, ../sass/styles.scss */
+#contact ul {
+  display: block;
+  margin: 50px auto 0 auto;
+  width: 170px;
+}
+/* line 469, ../sass/styles.scss */
+#contact li {
+  display: inline-block;
+  font-size: 18px;
+  margin-right: 25px;
+  color: #8287a6;
+}
+
+/* line 480, ../sass/styles.scss */
+footer {
+  height: 100px;
+  width: 100%;
+}
+/* line 483, ../sass/styles.scss */
+footer .wrapper {
+  margin-bottom: 25px;
+}
+/* line 486, ../sass/styles.scss */
+footer ul {
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+/* line 493, ../sass/styles.scss */
+footer li {
+  display: inline-block;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
 }
